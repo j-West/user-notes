@@ -2,16 +2,20 @@ app.config(($routeProvider, $locationProvider) => {
   $locationProvider.hashPrefix("");
   $routeProvider
     .when("/", {
-      controller: "FirstCtrl",
-      templateUrl: "app/partials/firstpartial.html",
+      controller: "RootCtrl",
+      templateUrl: "app/partials/rootpartial.html",
     })
-    .when("/second", {
-      controller: "SecondCtrl",
-      templateUrl: "app/partials/secondpartial.html",
+    .when("/login", {
+      controller: "LoginCtrl",
+      templateUrl: "app/partials/loginpartial.html",
     })
-    .when("/third", {
-      controller: "ThirdCtrl",
-      templateUrl: "app/partials/thirdpartial.html",
+    .when("/newnote", {
+      controller: "NewNoteCtrl",
+      templateUrl: "app/partials/newNotepartial.html",
+    })
+    .when("/notelist", {
+      controller: "NoteListCtrl",
+      templateUrl: "app/partials/notelistpartial.html",
     })
     .otherwise({
       redirectTo: "/"
