@@ -1,1 +1,9 @@
-<h1 class="text-center">Third Partial</h1>
+<h1 class="text-center">Note List Partial</h1>
+
+
+
+<div class="row" ng-repeat="note in notes">
+  <div class="text-center">
+    <h5><span class="glyphicon glyphicon-list" aria-hidden="true"></span>{{ note.Note }}</h5>
+  </div>
+</div>

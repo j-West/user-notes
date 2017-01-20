@@ -1,1 +1,7 @@
-<h1 class="text-center">Second Partial</h1>
+<h1 class="text-center">New Note Partial</h1>
+
+<div class="form-group">
+  <label for="exampleTextarea">Enter Note:</label>
+  <textarea ng-model="newNote" class="form-control" id="exampleTextarea" rows="5"></textarea>
+  <button ng-click="createNote(newNote)" class="btn btn-info btn-block">Save</button>
+</div>
